@@ -73,7 +73,7 @@ body {
     transform: translate(-50%, -50%);
 }
 .hidden-menu {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 50px;
     min-width: 250px;
@@ -91,7 +91,7 @@ body {
     color: var(--white);
     font-size: 18px;
 }
-.hidden0menu a:hover {
+.hidden-menu a:hover {
     background: var(--white);
     color: var(--color);
 }

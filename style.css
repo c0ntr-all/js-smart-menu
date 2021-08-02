@@ -11,3 +11,90 @@ html {
 body {
     font-family: "Robot", sans-serif;
 }
+.nav {
+    position: relative;
+    display: flex;
+    width: 100%;
+    background: var(--navBg);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.nav ul {
+    list-style: none;
+}
+.nav a {
+    text-decoration: none;
+}
+.visible-menu {
+    display: flex;
+}
+.visible-menu a {
+    display: block;
+    padding: 14px 20px;
+    font-size: 18px;
+    color: var(--color);
+}
+.visible-menu a:hover {
+    background: var(--color);
+    color: var(--white);
+}
+.burger {
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    right: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: var(--color);
+    color: var(--white);
+    cursor: pointer;
+}
+.burger svg {
+    transition: .4s;
+}
+.burger.active svg {
+    transform: rotate(90deg);
+}
+.burger-count {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 0;
+    top: 50%;
+    text-align: center;
+    background: var(--color);
+    color: var(--white);
+    font-size: 14px;
+    border: 2px solid var(--white);
+    line-height: 22px;
+    border-radius: 50%;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+}
+.hidden-menu {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    min-width: 250px;
+    padding: 10px 0;
+    background: var(--color);
+    transition: .4s;
+    transform: translateX(100%);
+}
+.hidden-menu.active {
+    transform: translateX(0);
+}
+.hidden-menu a {
+    display: block;
+    padding: 10px 10px 10px 20px;
+    color: var(--white);
+    font-size: 18px;
+}
+.hidden0menu a:hover {
+    background: var(--white);
+    color: var(--color);
+}
+.nav .hidden {
+    display: none;
+}

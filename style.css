@@ -1,0 +1,13 @@
+html {
+    --navBg: #d4e7ee;
+    --color: #29838c;
+    --white: #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Robot", sans-serif;
+}
